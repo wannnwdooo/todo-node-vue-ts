@@ -38,7 +38,7 @@ const patchTodo = async (data: Todo) => {
 
 const deleteTodo = async (id: string) => {
   try {
-    const res = await httpService.delete(`/todo/${id}`)
+    await httpService.delete(`/todo/${id}`)
   } catch (err) {
     if (axios.isAxiosError(err) && err.response) {
       const error = await err.response.data.message

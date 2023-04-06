@@ -1,4 +1,3 @@
-import { NextFunction, Request, Response } from "express";
 import TodoModel from "../models/todo.model.js";
 
 class Scheduler {
